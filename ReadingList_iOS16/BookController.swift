@@ -21,6 +21,21 @@ class BookController {
         saveToPersistentStore()
     }
     
+    func updateHasBeenRead(book: Book) {
+        guard let index = books.firstIndex(of: book) else { return }
+        books[index].hasBeenRead = !books[index].hasBeenRead
+        saveToPersistentStore()
+    }
+    
+    func update(book: Book, title: String, reasonToRead: String) {
+        guard let index = books.firstIndex(of: book) else { return }
+        var scratch = book
+        scratch.title = title
+        scratch.reasonToRead = reasonToRead
+        books.remove(at: index)
+        books.insert(scratch, at: index)
+    }
+    
     func delete(book: Book) {
         guard let index = books.firstIndex(of: book) else { return }
         books.remove(at: index)
