@@ -11,6 +11,22 @@ import Foundation
 class BookController {
     var books: [Book] = []
     
+    init() {
+        loadFromPersistentStore()
+    }
+    
+    func createBook(title: String, reasonToRead: String, hasBeenRead: Bool) {
+        let book = Book(title: title, reasonToRead: reasonToRead, hasBeenRead: hasBeenRead)
+        books.append(book)
+        saveToPersistentStore()
+    }
+    
+    func delete(book: Book) {
+        guard let index = books.firstIndex(of: book) else { return }
+        books.remove(at: index)
+        saveToPersistentStore()
+    }
+    
     var readingListFileURL: URL? {
         let fileManager = FileManager.default
         let documentsDir = fileManager.urls(for: .documentDirectory, in: .userDomainMask).first
@@ -42,4 +58,4 @@ class BookController {
     }
 }
 
-// TODO: Steps three through eight under the BookController instructions.
+
