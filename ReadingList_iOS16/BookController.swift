@@ -71,6 +71,14 @@ class BookController {
             print("Error decoding books: \(error)")
         }
     }
+    
+    var readBooks: [Book] {
+        return books.filter({ $0.hasBeenRead })
+    }
+    
+    var unreadBooks: [Book] {
+        return books.filter({ $0.hasBeenRead == false })
+    }
 }
 
 
