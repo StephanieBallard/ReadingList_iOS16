@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5ACF40AA242AC4380039E38B /* BookDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACF40A9242AC4380039E38B /* BookDetailViewController.swift */; };
 		5AF3BBEB242989BA000A20C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF3BBEA242989BA000A20C1 /* AppDelegate.swift */; };
 		5AF3BBED242989BA000A20C1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF3BBEC242989BA000A20C1 /* SceneDelegate.swift */; };
 		5AF3BBF2242989BA000A20C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AF3BBF0242989BA000A20C1 /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5ACF40A9242AC4380039E38B /* BookDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailViewController.swift; sourceTree = "<group>"; };
 		5AF3BBE7242989BA000A20C1 /* ReadingList_iOS16.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReadingList_iOS16.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AF3BBEA242989BA000A20C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5AF3BBEC242989BA000A20C1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,6 +67,7 @@
 				5AF3BBEA242989BA000A20C1 /* AppDelegate.swift */,
 				5AF3BBEC242989BA000A20C1 /* SceneDelegate.swift */,
 				5AF3BBF0242989BA000A20C1 /* Main.storyboard */,
+				5ACF40A9242AC4380039E38B /* BookDetailViewController.swift */,
 				5AF3BC022429B696000A20C1 /* ReadingListTableViewController.swift */,
 				5AF3BC042429B6AF000A20C1 /* BookTableViewCell.swift */,
 				5AF3BBF3242989BA000A20C1 /* Assets.xcassets */,
@@ -151,6 +154,7 @@
 				5AF3BC032429B696000A20C1 /* ReadingListTableViewController.swift in Sources */,
 				5AF3BC01242993D7000A20C1 /* BookController.swift in Sources */,
 				5AF3BBEB242989BA000A20C1 /* AppDelegate.swift in Sources */,
+				5ACF40AA242AC4380039E38B /* BookDetailViewController.swift in Sources */,
 				5AF3BC052429B6AF000A20C1 /* BookTableViewCell.swift in Sources */,
 				5AF3BBED242989BA000A20C1 /* SceneDelegate.swift in Sources */,
 			);

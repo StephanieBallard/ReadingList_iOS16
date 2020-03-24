@@ -27,4 +27,4 @@ class BookTableViewCell: UITableViewCell {
     @IBAction func checkMarkButtonTapped(_ sender: UIButton) {
     }
 }
-// TODO: Left off on step 5 on the storyboard set up
+
