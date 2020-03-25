@@ -13,6 +13,7 @@ class BookTableViewCell: UITableViewCell {
     @IBOutlet weak var bookTitleLabel: UILabel!
     @IBOutlet weak var hasBeenReadButton: UIButton!
     
+    weak var delegate: BookTableViewCellDelegate?
     
     var book: Book? {
         didSet {
@@ -32,6 +33,7 @@ class BookTableViewCell: UITableViewCell {
     }
 
     @IBAction func checkMarkButtonTapped(_ sender: UIButton) {
+        delegate?.toggleHasBeenRead(for: self)
     }
 
     func updateViews() {
