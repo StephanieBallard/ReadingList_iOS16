@@ -10,8 +10,15 @@ import UIKit
 
 class BookTableViewCell: UITableViewCell {
     
-    @IBOutlet weak var bookLabel: UILabel!
-    @IBOutlet weak var checkButton: UIButton!
+    @IBOutlet weak var bookTitleLabel: UILabel!
+    @IBOutlet weak var hasBeenReadButton: UIButton!
+    
+    
+    var book: Book? {
+        didSet {
+            updateViews()
+        }
+    }
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -25,6 +32,13 @@ class BookTableViewCell: UITableViewCell {
     }
 
     @IBAction func checkMarkButtonTapped(_ sender: UIButton) {
+    }
+
+    func updateViews() {
+        guard let book = book else { return }
+        bookTitleLabel.text = book.title
+        let checkMarkImage = book.hasBeenRead ? #imageLiteral(resourceName: "") : #imageLiteral(resourceName: "checked")
+        hasBeenReadButton.setImage(checkMarkImage, for: .normal)
     }
 }
 

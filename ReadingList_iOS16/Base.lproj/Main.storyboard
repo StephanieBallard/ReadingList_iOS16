@@ -51,8 +51,8 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="bookLabel" destination="0Ld-0P-r3Y" id="j7V-td-WcH"/>
-                                    <outlet property="checkButton" destination="xOT-nr-4bY" id="ta5-87-ref"/>
+                                    <outlet property="bookTitleLabel" destination="0Ld-0P-r3Y" id="LF2-Qb-PdK"/>
+                                    <outlet property="hasBeenReadButton" destination="xOT-nr-4bY" id="1Qz-D1-OxP"/>
                                     <segue destination="Khh-Db-6XR" kind="show" identifier="BookDetailShowSegue" id="qQd-mS-h8h"/>
                                 </connections>
                             </tableViewCell>
